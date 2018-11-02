@@ -1,0 +1,7 @@
+config = {
+	'scrapinghub': {
+		'api_key': '...',
+		'project_id': 355230,
+		'spider_name': 'camel-pizza'
+	}
+}
