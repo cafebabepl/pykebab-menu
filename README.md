@@ -5,6 +5,15 @@ Aplikacja zainstalowana jest w serwisie https://www.pythonanywhere.com/
 
 Usługa dostępna jest pod adresem http://wkozi.pythonanywhere.com/menu
 
+### Programowanie
+mikroframework Flask http://flask.pocoo.org/
+
+```
+set FLASK_APP=flask_app.py
+set FLASK_ENV=development
+flask run
+```
+
 ### Instalacja i konfiguracja
 instalacja biblioteki 
 `pip3.7 install --user scrapinghub`
