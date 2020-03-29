@@ -53,9 +53,12 @@ def menu():
 
 	items = job.items.list()
 	for item in items:
-		pozycja = get_pozycja(item)
-		wariant = { 'opis': item['wariant'], 'ceny': [ get_cena(item) ]}
-		pozycja['warianty'].append(wariant)
+		try:
+			pozycja = get_pozycja(item)
+			wariant = { 'opis': item['wariant'], 'ceny': [ get_cena(item) ]}
+			pozycja['warianty'].append(wariant)
+		except:
+			print("Invalid item")
 
 	return jsonify(menu)
 	#return json.dumps(menu), 200, 'application/json'
